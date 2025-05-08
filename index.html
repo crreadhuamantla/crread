@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRREAD Huamantla - Zona 1 A.C.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00e6e6;
+    }
+    section {
+      padding: 100px 20px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #00e6e6;
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn:hover {
+      background: #00b3b3;
+      transform: scale(1.05);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #00e6e6;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 1.5rem;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+      transition: transform 0.3s ease;
+    }
+    .whatsapp:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CRREAD Huamantla</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#quienes">Quiénes Somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2 data-aos="fade-up">Centro de Rehabilitación Huamantla</h2>
+    <p data-aos="fade-up" data-aos-delay="100">Transformando vidas con compromiso, amor y fe.</p>
+    <a href="#contacto" class="btn" data-aos="fade-up" data-aos-delay="200">Contáctanos</a>
+  </section>
+
+  <section id="quienes">
+    <h2 data-aos="fade-right">¿Quiénes Somos?</h2>
+    <p data-aos="fade-left">Somos un centro CRREAD comprometido con la rehabilitación de personas que enfrentan problemas de adicciones. Contamos con un equipo profesional y un programa integral de atención.</p>
+  </section>
+
+  <section id="servicios">
+    <h2 data-aos="fade-up">Nuestros Servicios</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Apoyo Psicológico</h3>
+        <p>Atención personalizada y terapia especializada para cada etapa del proceso.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-users"></i>
+        <h3>Grupos de Apoyo</h3>
+        <p>Reuniones grupales donde se comparte experiencia, fortaleza y esperanza.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-heartbeat"></i>
+        <h3>Rehabilitación Integral</h3>
+        <p>Programa intensivo con enfoque físico, emocional y espiritual.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2 data-aos="fade-right">Contáctanos</h2>
+    <p data-aos="fade-left">Teléfono del director Jaime Cervantes Madrigal:</p>
+    <p data-aos="fade-left"><strong>📞 241 134 9695</strong></p>
+    <p data-aos="fade-left">Correo: <strong>huamantlacrread@gmail.com</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 CRREAD Huamantla Zona 1 A.C. | Todos los derechos reservados
+  </footer>
+
+  <a href="https://wa.me/5212411349695" class="whatsapp" title="Enviar mensaje por WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
